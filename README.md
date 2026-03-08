@@ -1,21 +1,6 @@
 # music-production
 
-Python-driven industrial techno built with [pylive](https://github.com/ideoforms/pylive). Define patterns and scenes in code, then deploy them to Ableton Live's Session View over OSC.
-
-## Prerequisites
-
-- [Ableton Live 11+](https://www.ableton.com/en/live/)
-- [AbletonOSC](https://github.com/ideoforms/AbletonOSC) installed as a Control Surface (Preferences > Link/Tempo/MIDI > Control Surface)
-- [uv](https://docs.astral.sh/uv/)
-
-## Setup
-
-```bash
-uv sync              # install dependencies
-uv sync --group dev  # install dev tools (ruff)
-```
-
-## Commands
+Learning techno w/ [pylive](https://github.com/ideoforms/pylive). 
 
 | Command | What it does |
 |---------|-------------|
