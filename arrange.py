@@ -208,7 +208,7 @@ def _wait_with_updates(seconds, update_fns=None):
 
 
 # --- Main ---
-
+ 
 
 def main():
     """Record the arrangement into Ableton with smart transitions."""
