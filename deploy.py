@@ -99,11 +99,11 @@ def deploy(scenes, mix=None):
         set_.scan()
     print(f"Scenes available: {set_.num_scenes} (need {needed})")
 
-    # Clear old clips in every slot we're about to write
-    for slot in range(needed):
+    # Clear ALL existing slots so stale scenes don't linger
+    for slot in range(set_.num_scenes):
         for trk in tracks.values():
             _clear_slot(trk, slot)
-    print("Cleared old clips")
+    print(f"Cleared all clips across {set_.num_scenes} scenes")
 
     # Build scenes
     for scene_idx, (scene_name, clip_map) in enumerate(scenes):

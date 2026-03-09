@@ -117,17 +117,7 @@ SCENES = [
             "perc": ("Ride 8ths", perc.eighths(vel=55, accent_vel=65)),
         },
     ),
-    # 5: Wind Down -- velocity fading
-    (
-        "Wind Down",
-        {
-            "drums": ("Hats Fade", drums.wind_down()),
-            "bass": ("Bass Ease", bass.eighths(SHAPE_DRIVE, vel_on=85, vel_off=55)),
-            "pad": ("Pad Sustain", pad.chord([C3, Eb3, G3])),
-            "perc": ("Ride Fade", perc.fading_quarters()),
-        },
-    ),
-    # 6: Breakdown -- whole-note bass, pad forward
+    # 5: Breakdown -- whole-note bass, pad forward
     (
         "Breakdown",
         {
@@ -136,16 +126,7 @@ SCENES = [
             "pad": ("Pad Big", pad.chord([C3, Eb3, G3], vel=90)),
         },
     ),
-    # 7: Rebuild -- 8ths return with Drive contour
-    (
-        "Rebuild",
-        {
-            "drums": ("Hats Return", drums.rebuild()),
-            "bass": ("Bass Return", bass.eighths(SHAPE_DRIVE, vel_on=90, vel_off=60)),
-            "pad": ("Pad Settle", pad.chord([C3, Eb3, G3], vel=75)),
-        },
-    ),
-    # 8: Peak -- max intensity, darkest shape, same 8th rhythm
+    # 6: Peak -- max intensity, darkest shape, same 8th rhythm
     (
         "Peak",
         {
